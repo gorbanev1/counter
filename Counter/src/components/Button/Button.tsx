@@ -4,23 +4,17 @@ import {useState} from "react";
 
 type Button = {
     title: string,
-    action: (n: number) => void
-    count: number
+    action?: () => void
+
+    disabledProp?: boolean
 };
-export const Button = ({title, action, count}: Button) => {
-    const [disabled, setDisabled] = useState<boolean>(false)
+export const Button = ({title, action,  disabledProp}: Button) => {
+
     const clickHandler = () => {
-        if (count < 5) {
-         action(++count)
-        }
-        count<5
-            ?setDisabled(false)
-            :setDisabled(true)
+    action()
     }
     return (
-        <button disabled={disabled} onClick={() => {
-            clickHandler()
-        }}>
+        <button disabled={disabledProp?disabledProp:false} onClick={()=>action()}>
             {title}
         </button>
     );
