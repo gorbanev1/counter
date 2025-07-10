@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0c72adf-3598-443a-8a10-e184ec474733" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Counter/src/components/Button/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Counter/src/components/counter/Counter.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Counter/src/components/counter/Counter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    <list default="true" id="e0c72adf-3598-443a-8a10-e184ec474733" name="Changes" comment="flexWrapper">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Counter/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Counter/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/components/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Counter/src/components/counter/Counter.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/components/counter/Counter.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Counter/src/components/counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/components/counter/Counter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Counter/src/components/flexWrapper/FlexWrapper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/components/flexWrapper/FlexWrapper.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "gorbanev1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/gorbanev1/counter.git",
+    "accountId": "1e97b3f9-c7e7-40e2-b249-3a86d3c248d8"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -69,11 +81,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751972124473</updated>
-      <workItem from="1751972125503" duration="6882000" />
+      <workItem from="1751972125503" duration="89215000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <option name="closed" value="true" />
+      <created>1751984054989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751984054989</updated>
+    </task>
+    <task id="LOCAL-00002" summary="flexWrapper">
+      <option name="closed" value="true" />
+      <created>1752068135977</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752068135977</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <MESSAGE value="flexWrapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="flexWrapper" />
   </component>
 </project>

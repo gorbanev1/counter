@@ -39,7 +39,7 @@ export const Counter = (props: Counter) => {
 
         return (
             <div className={s.counter}>
-                <div style={count == 5 ? maxStyle : {}}>{count}</div>
+                <div className={s.number} style={count == 5 ? maxStyle : {}}>{count}</div>
                 <FlexWrapper direction={"row"} >
                     <Button action={increment} title={'increment'} disabledProp={disabledIncrement}></Button>
                     <Button action={setCount0} title={'reset'} disabledProp={disabledReset}></Button>
