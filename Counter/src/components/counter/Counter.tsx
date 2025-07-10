@@ -12,7 +12,8 @@ const maxStyle = {
     cursor: 'pointer',
     transform: ' skew(-10deg, 20deg)',
     transition: 'all 3s ease in-out',
-    color: 'red'
+    color: 'red',
+    fontSize: '140%'
 }
 export const Counter = (props: Counter) => {
         const [count, setCount] = useState<number>(0)

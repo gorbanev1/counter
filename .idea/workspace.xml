@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0c72adf-3598-443a-8a10-e184ec474733" name="Changes" comment="flexWrapper">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Counter/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Counter/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/components/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Counter/src/components/counter/Counter.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/components/counter/Counter.module.css" afterDir="false" />
+    <list default="true" id="e0c72adf-3598-443a-8a10-e184ec474733" name="Changes" comment="some styles">
       <change beforePath="$PROJECT_DIR$/Counter/src/components/counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/components/counter/Counter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Counter/src/components/flexWrapper/FlexWrapper.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/src/components/flexWrapper/FlexWrapper.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751972124473</updated>
-      <workItem from="1751972125503" duration="89215000" />
+      <workItem from="1751972125503" duration="90510000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -99,7 +94,23 @@
       <option name="project" value="LOCAL" />
       <updated>1752068135977</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="some styles">
+      <option name="closed" value="true" />
+      <created>1752155607993</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752155607993</updated>
+    </task>
+    <task id="LOCAL-00004" summary="some styles">
+      <option name="closed" value="true" />
+      <created>1752155758366</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752155758366</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="flexWrapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="flexWrapper" />
+    <MESSAGE value="some styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="some styles" />
   </component>
 </project>
