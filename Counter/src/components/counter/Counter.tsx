@@ -6,7 +6,12 @@ import s from './Counter.module.css'
 import {FlexWrapper} from "../flexWrapper/FlexWrapper.tsx";
 
 
-type Counter = {};
+type Counter = {
+    count: number
+    setCount: (count: number) => void
+    maxValue?: number
+    startValue?: number
+};
 const maxStyle = {
     fontWeight: 'bold',
     cursor: 'pointer',
@@ -15,17 +20,17 @@ const maxStyle = {
     color: 'red',
     fontSize: '140%'
 }
-export const Counter = (props: Counter) => {
-        const [count, setCount] = useState<number>(0)
+export const Counter = ({count, setCount, maxValue=5, startValue=0}: Counter) => {
         const [disabledIncrement, setDisabledIncrement] = useState<boolean>(false)
         const [disabledReset, setDisabledReset] = useState<boolean>(true)
-        const increment = () => {
 
-            if (count < 5) {
+        const increment = () => {
+            console.log(startValue,maxValue)
+            if (count < maxValue) {
                 setCount(count + 1)
 
             }
-            if (count === 4) {
+            if (count === maxValue-1) {
                 setDisabledIncrement(true)
                 setDisabledReset(false)
             }
@@ -33,14 +38,14 @@ export const Counter = (props: Counter) => {
         }
 
         function setCount0() {
-            setCount(0)
+            setCount(startValue)
             setDisabledIncrement(false)
             setDisabledReset(true)
         }
 
         return (
             <div className={s.counter}>
-                <div className={s.number} style={count == 5 ? maxStyle : {}}>{count}</div>
+                <div className={s.number} style={count == maxValue ? maxStyle : {}}>{count}</div>
                 <FlexWrapper direction={"row"} >
                     <Button action={increment} title={'increment'} disabledProp={disabledIncrement}></Button>
                     <Button action={setCount0} title={'reset'} disabledProp={disabledReset}></Button>
