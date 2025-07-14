@@ -8,9 +8,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
 }
 .settings input {
-    max-width: 40px;
+    max-width: 70px;
+    height: 35px;
+    font-size: 150%;
 }
