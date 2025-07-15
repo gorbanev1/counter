@@ -26,6 +26,17 @@ export const Settings = ({setDisabledIncrement,setDisabledReset, setCount, setSt
         }
     },[start,max])
 
+    useEffect(() => {
+
+        let start = localStorage.getItem("startCount")
+        let max = localStorage.getItem("maxCount")
+        if (start && max) {
+            setStart( JSON.parse(start))
+            setMax(JSON.parse(max))
+            debugger
+        }
+    }, [])
+
     function setValues() {
         if (max > start) {
             setMaxCounterValue(max)
@@ -33,6 +44,8 @@ export const Settings = ({setDisabledIncrement,setDisabledReset, setCount, setSt
             setCount(start)
             setDisabledReset(true)
             setDisabledIncrement(false)
+            localStorage.setItem("startCount", JSON.stringify(start))
+            localStorage.setItem("maxCount", JSON.stringify(max))
             setError(null)
         } else {
             setError("Максимальное значение меньше стартового")

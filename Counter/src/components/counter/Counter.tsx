@@ -3,6 +3,7 @@ import * as React from 'react';
 import {Button} from "../Button/Button.tsx";
 import s from './Counter.module.css'
 import {FlexWrapper} from "../flexWrapper/FlexWrapper.tsx";
+import {useEffect} from "react";
 
 
 type Counter = {
@@ -14,13 +15,15 @@ type Counter = {
     setDisabledReset: (v: boolean) => void
     disabledIncrement: boolean
     disabledReset: boolean
+    setMaxCounterValue: (v:number)=>void
+
 
 };
 const maxStyle = {
     fontWeight: 'bold',
     cursor: 'pointer',
     transform: ' scale(1, 1.1)',
-    "--border-thickness":" 4px",
+    "--border-thickness": " 4px",
     transition: "0.2s ease-in-out",
     color: 'red',
     fontSize: '140%'
@@ -33,9 +36,22 @@ export const Counter = ({
                             setDisabledIncrement,
                             disabledReset,
                             setDisabledReset,
-                            disabledIncrement
+                            disabledIncrement,
+                            setMaxCounterValue,
                         }: Counter) => {
 
+        useEffect(() => {
+
+            let start = localStorage.getItem("startCount")
+            let max = localStorage.getItem("maxCount")
+            if (start && max) {
+                startValue = JSON.parse(start)
+                maxValue = JSON.parse(max)
+                setMaxCounterValue(maxValue)
+                setCount(startValue)
+                debugger
+            }
+        }, [])
 
         const increment = () => {
             console.log(startValue, maxValue)
